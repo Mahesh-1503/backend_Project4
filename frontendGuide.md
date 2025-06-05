@@ -25,43 +25,49 @@ http://localhost:5000/api
 - **Body**:
 ```json
 {
-    "name": "John Doe",
-    "email": "john@example.com",
+    "name": "Mahesh",
+    "email": "mahesh@gmail.com", //Use valid email this is just a template example
     "password": "password123",
-    "role": "user" // optional, defaults to "user"
+    "role": "user"
 }
 ```
 - **Response**: Returns JWT token and user data
-- **Note**: Role can be "user", "agent", or "admin"
+- **Note**: 
+  - Role can be "user", "agent", or "admin"
+  - Email must be a valid email format (e.g., user@domain.com)
+  - Email validation is required on both frontend and backend
 
 ### Login
 - **Endpoint**: `POST /auth/login`
 - **Body**:
 ```json
 {
-    "email": "john@example.com",
+    "email": "mahesh@gmail.com",
     "password": "password123"
 }
 ```
 - **Response**: Returns JWT token and user data
+- **Note**: Email must be a valid email format
 
 ### Password Reset Flow
 1. **Request OTP**
    - **Endpoint**: `POST /auth/forgot-password`
-   - **Body**: `{ "email": "user@example.com" }`
+   - **Body**: `{ "email": "mahesh@gmail.com" }`
    - **Response**: Success message
+   - **Note**: Email must be a valid email format
 
 2. **Reset Password**
    - **Endpoint**: `POST /auth/reset-password`
    - **Body**:
    ```json
    {
-       "email": "user@example.com",
+       "email": "mahesh@gmail.com",
        "otp": "123456",
        "password": "newpassword123"
    }
    ```
    - **Response**: Success message
+   - **Note**: Email must be a valid email format
 
 ### Authentication Headers
 - Include JWT token in all protected requests:
