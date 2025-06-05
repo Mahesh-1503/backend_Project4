@@ -76,13 +76,15 @@ npm run dev
 
 ### Authentication
 
+> **Note:** Always use a valid email address in your requests. The examples below are just templates.
+
 #### Register User
 - **URL**: `POST /api/auth/register`
 - **Body**:
 ```json
 {
-    "name": "John Doe",
-    "email": "john@example.com",
+    "name": "Mahesh",
+    "email": "mahesh@gmail.com", // Use valid email - this is just a template example
     "password": "password123",
     "role": "user" // optional, defaults to "user"
 }
@@ -93,7 +95,7 @@ npm run dev
 - **Body**:
 ```json
 {
-    "email": "john@example.com",
+    "email": "mahesh@gmail.com", // Use valid email - this is just a template example
     "password": "password123"
 }
 ```
@@ -103,7 +105,7 @@ npm run dev
 - **Body**:
 ```json
 {
-    "email": "john@example.com"
+    "email": "mahesh@gmail.com" // Use valid email - this is just a template example
 }
 ```
 
@@ -112,7 +114,7 @@ npm run dev
 - **Body**:
 ```json
 {
-    "email": "john@example.com",
+    "email": "mahesh@gmail.com", // Use valid email - this is just a template example
     "otp": "123456",
     "password": "newpassword123"
 }
