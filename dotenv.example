@@ -1,0 +1,28 @@
+# 🌐 Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# 🗃️ MongoDB Configuration
+MONGODB_URI=your_mongodb_connection_string
+
+# 🔐 JWT Configuration
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRE=30d
+
+# 📧 Email Configuration (for OTP and notifications)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+FROM_NAME=Property Listing
+FROM_EMAIL=your_email@example.com
+SMTP_USER=your_email@example.com
+SMTP_PASS=your_email_app_password
+EMAIL_FROM=your_email@example.com
+
+# 🔗 Frontend URL (for email links)
+FRONTEND_URL=http://localhost:3000
+
+# ☁️ Cloudinary Configuration (for image uploads)
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_API_SECRET=your_cloudinary_api_secret
