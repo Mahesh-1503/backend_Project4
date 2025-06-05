@@ -1,5 +1,8 @@
 # Property Listing Backend API
 
+**Frontend Developers/Fullstack-Developers:**
+👉 Please read the [Frontend Developer Guide](./frontendGuide.md) for essential information on how to use this API from the frontend, including authentication, file uploads, best practices, and integration details. This guide is required reading for anyone developing the frontend of this project.
+
 ## Features
 
 - **User Authentication & Authorization**: Secure registration, login, JWT-based authentication, and role-based access control (user, agent, admin).
